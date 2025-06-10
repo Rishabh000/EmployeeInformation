@@ -1,0 +1,49 @@
+<h2>Employee Registration Form</h2>
+<form (submit)="addEmployee(employeeForm.value)" class="form-group" #employeeForm="ngForm">
+
+    <div class="row">
+        <div class="col-lg-3">
+            <label for="employeeName" class="form-label">Employee Name</label>
+        </div>
+        <div class="col-lg-9">
+            <input class="form-control" type="text" name="employeeName" ngModel id="employeeName"
+                placeholder="Input your name" required pattern="[a-zA-Z\s]+" #employeeNameT="ngModel"
+                [class.is-invalid]="employeeNameT.touched && employeeNameT.invalid"
+                [class.is-valid]="employeeNameT.dirty && employeeNameT.valid">
+            <p *ngIf="employeeNameT.touched">
+                <small class="text-danger" *ngIf="employeeNameT.errors?.['required']">Employee Name is required</small>
+                <small class="text-danger" *ngIf="employeeNameT.errors?.['pattern']">Input a valid Employee Name</small>
+            </p> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+            <label class="form-label" for="employeeId">ID</label>
+        </div>
+        <div class="col-lg-9">
+            <input class="form-control" type="number" ngModel name="employeeId" id="employeeId" placeholder="Inpunt ID"
+                required min="0" minlength="6" #employeeIdT="ngModel">
+                <p *ngIf="employeeIdT.touched">
+                    <small class="text-danger" *ngIf="employeeIdT.errors?.['required']">Employee ID is required</small>
+                    <small class="text-danger" *ngIf="employeeIdT.errors?.['min']">Input a valid Employee ID</small>
+                </p> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <label class="form-label" for="joinDate">Date Joined</label>
+        </div>
+        <div class="col-lg-9">
+            <input class="form-control" ngModel required type="date" name="joinDate" id="joinDate" #joinDateT="ngModel">
+            <p *ngIf="employeeIdT.touched">
+                <small class="text-danger" *ngIf="joinDateT.errors?.['required']">Join Date is required</small>
+            </p> 
+        </div>
+    </div>
+    <div>
+        <button [disabled]="employeeForm.invalid" class="btn btn-primary" type="submit">Submit</button> | 
+        <button class="btn btn-danger" type="reset">Clear Form</button>
+    </div>
+</form>
+

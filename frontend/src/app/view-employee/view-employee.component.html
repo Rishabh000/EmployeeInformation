@@ -1,0 +1,21 @@
+<div class="empListTab">
+    <h3>List of Employees</h3>
+    <table class="table">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date Joined</th>
+            <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employeeList">
+                <td>{{emp.employeeId}}</td>
+                <td>{{emp.employeeName}}</td>
+                <td>{{emp.joinDate}}</td>
+                <td><button (click)="deleteEmployee(emp.employeeId)" class="btn btn-danger">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
