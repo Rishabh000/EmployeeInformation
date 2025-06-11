@@ -9,7 +9,7 @@ A straightforward and efficient application for managing employee data. This sys
 Prerequisites\
 Installation\
 Usage\
-🤝 Contributing\
+🤝 Contributing
 
 About the Project\
 The Employee Information Management System is a web-based application designed to simplify the process of maintaining employee records. The project serves as a practical example of a full-stack application, demonstrating the integration of a Java-based backend with a dynamic, user-friendly frontend.
@@ -19,9 +19,9 @@ Add New Employees: Easily input and save new employee details into the system.
 View Employee List: Display a comprehensive list of all employees with their key information.
 Update Employee Information: Modify the details of existing employees to keep records current.
 Delete Employees: Remove employee records that are no longer needed.
-Search Functionality: Quickly find specific employees from the database.
+Search Functionality: Quickly find specific employees from the database.\
 🛠️ Technologies Used\
-This project is built using a modern technology stack:\
+This project is built using a modern technology stack:
 
 Backend:\
 Java: A robust, object-oriented programming language.\
@@ -35,10 +35,10 @@ JavaScript: To create dynamic and interactive content.\
 Database:\
 H2 Database: An in-memory database, ideal for development and testing.\
 🚀 Getting Started\
-To get a local copy up and running, follow these simple steps.\
+To get a local copy up and running, follow these simple steps.
 
 Prerequisites\
-Ensure you have the following installed on your local machine:\
+Ensure you have the following installed on your local machine:
 
 Java Development Kit (JDK) 8 or higher\
 Apache Maven\
@@ -74,4 +74,4 @@ Fork the Project\
 Create your Feature Branch (git checkout -b feature/AmazingFeature)\
 Commit your Changes (git commit -m 'Add some AmazingFeature')\
 Push to the Branch (git push origin feature/AmazingFeature)\
-Open a Pull Request\
+Open a Pull Request
