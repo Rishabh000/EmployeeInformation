@@ -37,16 +37,16 @@ H2 Database: An in-memory database, ideal for development and testing.\
 🚀 Getting Started\
 To get a local copy up and running, follow these simple steps.
 
-# Prerequisites\
+# Prerequisites
 Ensure you have the following installed on your local machine:
 Java Development Kit (JDK) 8 or higher\
 Apache Maven\
-Git\
+Git
 
 # Installation-
 Clone the repository:  git clone https://github.com/Rishabh000/EmployeeInformation.git
 Navigate to the project directory: cd EmployeeInformation\
-Build the project using Maven: mvn clean install\
+Build the project using Maven: mvn clean install
 
 Run the application:  mvn spring-boot:run\
 The application will be accessible at http://localhost:8080.
